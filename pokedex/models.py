@@ -11,6 +11,3 @@ class pokemon(models.Model):
     weight = models.IntegerField("weight")
     types = models.CharField("types", max_length=200)
     sprint = models.CharField("sprint", max_length=200)
-
-    def __str__(self) -> str:
-        return "Pokemon " + self.name
