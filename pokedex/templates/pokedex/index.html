@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,12 +6,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>Pokedex</title>
 </head>
 
 <body>
-    <h1>Pokedex</h1>
+    <div class="head">
+        <h1>Pokedex</h1>
+    </div>
+    <hr>
+    <div class="refresh_data_base">
+        <input type="text" placeholder="Ex: '0, 151' pegar os pokemons de 0 a 151">
+        <input type="button" value="Atualizar banco">
+    </div>
+    <hr>
+    <div class="main">  
 
+    </div>
 </body>
 
 </html>
